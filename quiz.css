@@ -1,0 +1,110 @@
+body{
+    background-image: url(quizbg.jpg);
+    font-size:larger;
+    height: fit-content;
+    width: fit-content;
+}
+
+#one{
+    border-style: groove;
+    border-color: darkgoldenrod;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100px;
+    height: 2px;
+}
+
+#q3{
+    border-radius:1px;
+    border-color: cadetblue;
+    background-color: rgba(225, 235, 235, 0.599);
+    font-size: large;
+}
+
+
+
+
+.p1 {
+    font-family:'Courier New', Courier, monospace;
+}
+form{
+    font-size: larger;
+    position: relative; top: -60px;
+    height: 600px;
+    width: 1000px;
+    color:indigo;
+    background-color:rgba(225, 235, 235, 0.599);
+}
+button {
+    text-align: center;
+    position: relative; left: 850px; bottom: 100px;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color:saddlebrown;
+    background-image: url(submit.jpg);
+    border:double;
+    border-color: darkblue;
+    border-radius: 15px;
+    box-shadow: 0 5px darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+  }
+  
+  
+  button:active {
+    box-shadow: 0 3px darkblue;
+    transform: translateY(4px);
+  }
+
+#score{
+    font-size:xxx-large;
+    position: relative; left: 950px; bottom:790px;
+}
+#final{
+    font-size:xxx-large;
+    position: relative; left: 860px; bottom:893px;
+    background-color:rgba(200, 100, 200, 0.100);
+    width: 83px;
+    height: fit-content;
+}
+#time{
+    border-style: groove;
+    width: 985px;
+    position: relative; top: 20px;
+    font-size:xx-large;
+    color:darkslategrey;
+    font-family: 'Bebas Neue', cursive;
+}
+#title{
+    border-style:double;
+    position: relative; top: -55px; left: 550px;
+    font-size: xx-large;
+    color:goldenrod;
+    font-family: 'Bebas Neue', cursive;
+    background-image: url(file.jpg);
+    width: 76px;
+}
+
+#emoji{
+    position: relative; bottom: 785px; left: 260px;
+    font-size:larger;
+}
+
+#emojib{
+    position: relative; bottom: 506px; left: 520px;
+    font-size: larger;
+}
+
+section{
+    border-style: dotted;
+    border-color: antiquewhite;
+    background-image: url(board.jpg);
+    height:300px;
+    width: 300px;
+    color: antiquewhite;
+    font-family: 'Finger Paint', cursive;
+    position:fixed;  bottom:400px; left: 1010px;
+    font-size:medium;   
+}

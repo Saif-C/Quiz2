@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Quiz 1</title>
+<head>
+    <link rel="icon" href="logo.png">
+</head>
+<link rel="stylesheet" href="quiz.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+<script src="quiz.js"></script>
+
+<body onload="startTime()">
+    <b><div id="time"></div>
+    <p id="title">&nbsp; &nbsp;QUIZ</p></b>
+
+    <form>
+        <b>
+            <u>
+                <label for="one" style="color: teal;">Please Enter your name:</label>
+                <input type="text" id="one" name="reply" required>
+            </u>
+            <br><br><br>
+            
+            >>>>>>>>>>>>>>
+            <p class="p1"> Q1. What is html ?</p>A:
+            <input type="radio" id="pglanguage" name="answer">
+            <label for="second">Programing Language</label> &nbsp; &nbsp;
+
+            <input type="radio" id="Mlanguage" name="answer">
+            <label for="second">Markup Language</label><br><br>
+            
+            >>>>>>>>>>>>>>
+            <p class="p1">Q2. Is the number "166320" divisble by...(select all if they are true).</p>A:
+            &nbsp; &nbsp; <input type="checkbox" id="op3">
+            <label for="check">3</label> &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type="checkbox" id="op4">
+            <label for="check">4</label><br>
+            
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <input type="checkbox" id="op7">
+            <label for="check">7</label> &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <input type="checkbox" id="op11">
+            <label for="check">11</label><br><br>
+            
+            >>>>>>>>>>>>>>>
+            <p class="p1">Q3. What is the full form of the CSS?</p>A:
+            <input type="tex" id="q3" name="q3"><br><br><br><br>
+
+            <button type="button" onclick="buttonfunc()">Submit</button>
+        
+        </b>    
+    </form>
+    <b style="color: chocolate;">
+        <p id="score">/6</p>
+        <p id="final"></p>
+    </b>
+
+    <p id="emoji"></p>
+    <p id="emojib"></p>
+    
+    <section id="result"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        Result
+        <p id="s1"></p>
+        <p id="s2"></p>
+        <p id="s3"></p>
+        <p id="s4"></p>
+    </section>
+</body>
+</html>
