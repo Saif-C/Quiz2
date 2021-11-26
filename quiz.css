@@ -96,7 +96,6 @@ button {
     position: relative; bottom: 506px; left: 520px;
     font-size: larger;
 }
-
 section{
     border-style: dotted;
     border-color: antiquewhite;
@@ -105,6 +104,11 @@ section{
     width: 300px;
     color: antiquewhite;
     font-family: 'Finger Paint', cursive;
-    position:fixed;  bottom:400px; left: 1010px;
     font-size:medium;   
+    position:absolute; top: 120px; left: 1020px;
 }
+#s5{
+    font-size: x-large;
+    color: cyan;
+}
+
