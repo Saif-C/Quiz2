@@ -33,12 +33,12 @@ function buttonfunc(){
     
     if (radio2 == true){
         score+= 1;    
-        document.getElementById('s1').innerHTML = "Question 1 is correct. [1 point]";
+        document.getElementById('s1').innerHTML = ">-> Question 1 is correct. [1 point]";
         emoji.innerText = String.fromCodePoint(0x2714);
     }
     else{
         emoji.innerText = String.fromCodePoint(0x274C);
-        document.getElementById('s1').innerHTML = "Question 1 is incorrect.";
+        document.getElementById('s1').innerHTML = ">-> Question 1 is incorrect.";
     }
 
     let op3 = document.querySelector("#op3").checked;
@@ -48,7 +48,7 @@ function buttonfunc(){
     
     if (op3 == true){
         score+= 0.50;
-        document.getElementById('s2').innerHTML = "Question 2 is correct. [2 point]";
+        document.getElementById('s2').innerHTML = ">-> Question 2 is correct. [2 point]";
     }
     if (op4 == true){
         score+= 0.50;
@@ -60,8 +60,8 @@ function buttonfunc(){
         score+= 0.50;
     }
     else{
-        document.getElementById('s2').innerHTML = "for Q2 You will not get full marks, you missed options .";
-        document.getElementById('s3').innerHTML = "(All four options were right)";
+        document.getElementById('s2').innerHTML = ">-> for Q2 You will not get full marks, you missed options .";
+        document.getElementById('s3').innerHTML = "**(All four options were right)";
     }
     
     let lastans = document.getElementById("q3").value;
@@ -71,27 +71,33 @@ function buttonfunc(){
         console.log("correct");
         score+=3;
         emojib.innerText = String.fromCodePoint(0x2714);
-        document.getElementById('s4').innerHTML = "Question 3 is correct. [3 point]";
+        document.getElementById('s4').innerHTML = ">-> Question 3 is correct. [3 point]";
     }
     else if (lastans == "Cascading style sheets"){
         console.log("correct");
         score+=3;
         emojib.innerText = String.fromCodePoint(0x2714);
-        document.getElementById('s4').innerHTML = "Question 3 is correct. [3 point]";
+        document.getElementById('s4').innerHTML = ">-> Question 3 is correct. [3 point]";
 
     }
     else if (lastans == "cascading style sheets"){
         console.log("correct");
         score+=3;
         emojib.innerText = String.fromCodePoint(0x2714);
-        document.getElementById('s4').innerHTML = "Question 3 is correct. [3 point]";
+        document.getElementById('s4').innerHTML = ">-> Question 3 is correct. [3 point]";
     } 
     else{
         console.log("Question3 is incorrect");
         emojib.innerText = String.fromCodePoint(0x274C);
-        document.getElementById('s4').innerHTML = "Question 3 is incorrect.";
+        document.getElementById('s4').innerHTML = ">-> Question 3 is incorrect.";
     }
     document.getElementById("final").innerHTML = score;
+    if (score<2){
+        document.getElementById("s5").innerHTML = "|/\...Fail";
+    }
+    else{
+        document.getElementById("s5").innerHTML = "|/\ ...Pass";
+    }
 }
 
 
